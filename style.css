@@ -2,8 +2,43 @@
     --main-bg-color: #e0f2fe;
     --sidebar-bg-color: #0284c7;
     --accent-color: yellow;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: var(--main-bg-color);
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#dashboard{
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    background-color: var(--sidebar-bg-color);
+    color: white;
+    border-style: solid;
+    border-color: red;
+}
+
+#dashboard_svg{
+    width: 40px;
 }
