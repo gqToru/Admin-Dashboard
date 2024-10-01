@@ -1,0 +1,9 @@
+*{
+    --main-bg-color: #e0f2fe;
+    --sidebar-bg-color: #0284c7;
+    --accent-color: yellow;
+}
+
+body{
+    background-color: var(--main-bg-color);
+}
