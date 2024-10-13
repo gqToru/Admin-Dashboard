@@ -2,6 +2,7 @@
   --main-bg-color: #e0f2fe;
   --sidebar-bg-color: #0284c7;
   --accent-color: yellow;
+  --search-bar: #dbeafe;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -79,7 +80,7 @@ svg {
   border-color: red;
   box-shadow: 0px 5px 20px grey;
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -89,20 +90,17 @@ svg {
 
 #search_bar {
   display: grid;
-  grid-template-columns: 30px 9fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-#search_bar svg {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-template-columns: 1fr 7fr;
+  justify-items: center;
+  align-items: center;
 }
 
 #search_input {
-  border-radius: 10px;
+  border-radius: 15px;
   width: 90%;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  background-color: var(--search-bar);
+  border: none;
+  height: 30px;
 }
 
 #main_profile {
@@ -130,9 +128,10 @@ svg {
 #mini_profile {
   text-align: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 #profile_picture_mini {
@@ -143,20 +142,31 @@ svg {
   object-fit: cover;
   display: inline-block;
   vertical-align: middle;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
 }
 
 #profile_text_mini {
   display: inline-block;
   vertical-align: middle;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
 }
 
 #bell_mini {
   display: inline-block;
   vertical-align: middle;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+}
+
+#main_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#header_buttons {
+  border: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+  background-color: var(--sidebar-bg-color);
+  color: white;
 }
