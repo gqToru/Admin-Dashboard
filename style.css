@@ -40,8 +40,8 @@ svg {
   grid-row: 1 / span 2;
   background-color: var(--sidebar-bg-color);
   color: white;
-  border-style: solid;
-  border-color: red;
+  /* border-style: solid;
+  border-color: red; */
   display: grid;
   grid-template-rows: 20px 1fr 3fr;
   gap: 50px;
@@ -76,12 +76,12 @@ svg {
 }
 
 #header {
-  border-style: solid;
-  border-color: red;
-  box-shadow: 0px 5px 20px grey;
+  /* border-style: solid;
+  border-color: red; */
+  box-shadow: 5px 2px 10px black;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 80px 1fr;
 }
 
 #dashboard_svg {
@@ -115,14 +115,18 @@ svg {
 }
 
 #profile_picture {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
   display: inline-block;
   margin-left: 50px;
   vertical-align: middle;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  margin-bottom: 10px;
 }
 
 #mini_profile {
@@ -169,4 +173,31 @@ svg {
   border-radius: 20px;
   background-color: var(--sidebar-bg-color);
   color: white;
+}
+
+#content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 20px;
+  background-color: var(--main-bg-color);
+}
+
+#projects {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1frs);
+}
+
+#announcements {
+  margin-top: 30px;
+  grid-column: 2 / 3;
+}
+
+#trending {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
