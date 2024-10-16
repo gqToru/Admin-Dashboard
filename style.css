@@ -189,7 +189,7 @@ svg {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20px 1fr;
+  grid-template-rows: 20px 200px 200px 200px;
   gap: 10px;
   grid-row: 1 / span 2;
 }
@@ -234,9 +234,33 @@ svg {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(1, 100px);
 }
 
 #trending {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  justify-content: start;
+  display: grid;
+  margin-left: 30px;
+  margin-top: 10px;
+  grid-template-rows: 30px 1fr;
+}
+
+#card_trending {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(4, 100px);
+}
+
+#card_trending img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#trending_users {
 }
